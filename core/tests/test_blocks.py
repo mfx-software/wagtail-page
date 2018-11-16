@@ -2626,26 +2626,85 @@ class TestStreamBlock(WagtailTestUtils, SimpleTestCase):
         self.assertEqual(value[1].id, '0000')
         self.assertEqual(value[1].value, 'this is my heading')
 
-    def test_get_prep_value(self):
+    def check_get_prep_value(self, stream_data, is_lazy):
         class ArticleBlock(blocks.StreamBlock):
             heading = blocks.CharBlock()
             paragraph = blocks.CharBlock()
 
         block = ArticleBlock()
 
-        value = blocks.StreamValue(block, [
-            ('heading', 'this is my heading', '0000'),
-            ('paragraph', '<p>this is a paragraph</p>')
-        ])
+        value = blocks.StreamValue(block, stream_data, is_lazy=is_lazy)
         jsonish_value = block.get_prep_value(value)
 
         self.assertEqual(len(jsonish_value), 2)
         self.assertEqual(jsonish_value[0], {'type': 'heading', 'value': 'this is my heading', 'id': '0000'})
         self.assertEqual(jsonish_value[1]['type'], 'paragraph')
         self.assertEqual(jsonish_value[1]['value'], '<p>this is a paragraph</p>')
-        # get_prep_value should assign a new (random and non-empty) ID to this block, as it didn't
-        # have one already
+        # get_prep_value should assign a new (random and non-empty)
+        # ID to this block, as it didn't have one already.
         self.assertTrue(jsonish_value[1]['id'])
+
+    def test_get_prep_value_not_lazy(self):
+        stream_data = [
+            ('heading', 'this is my heading', '0000'),
+            ('paragraph', '<p>this is a paragraph</p>')
+        ]
+        self.check_get_prep_value(stream_data, is_lazy=False)
+
+    def test_get_prep_value_is_lazy(self):
+        stream_data = [
+            {'type': 'heading', 'value': 'this is my heading', 'id': '0000'},
+            {'type': 'paragraph', 'value': '<p>this is a paragraph</p>'},
+        ]
+        self.check_get_prep_value(stream_data, is_lazy=True)
+
+    def check_get_prep_value_nested_streamblocks(self, stream_data, is_lazy):
+        class TwoColumnBlock(blocks.StructBlock):
+            left = blocks.StreamBlock([('text', blocks.CharBlock())])
+            right = blocks.StreamBlock([('text', blocks.CharBlock())])
+
+        block = TwoColumnBlock()
+
+        value = {
+            k: blocks.StreamValue(block.child_blocks[k], v, is_lazy=is_lazy)
+            for k, v in stream_data.items()
+        }
+        jsonish_value = block.get_prep_value(value)
+
+        self.assertEqual(len(jsonish_value), 2)
+        self.assertEqual(
+            jsonish_value['left'],
+            [{'type': 'text', 'value': 'some text', 'id': '0000'}]
+        )
+
+        self.assertEqual(len(jsonish_value['right']), 1)
+        right_block = jsonish_value['right'][0]
+        self.assertEqual(right_block['type'], 'text')
+        self.assertEqual(right_block['value'], 'some other text')
+        # get_prep_value should assign a new (random and non-empty)
+        # ID to this block, as it didn't have one already.
+        self.assertTrue(right_block['id'])
+
+    def test_get_prep_value_nested_streamblocks_not_lazy(self):
+        stream_data = {
+            'left': [('text', 'some text', '0000')],
+            'right': [('text', 'some other text')],
+        }
+        self.check_get_prep_value_nested_streamblocks(stream_data, is_lazy=False)
+
+    def test_get_prep_value_nested_streamblocks_is_lazy(self):
+        stream_data = {
+            'left': [{
+                'type': 'text',
+                'value': 'some text',
+                'id': '0000',
+            }],
+            'right': [{
+                'type': 'text',
+                'value': 'some other text',
+            }],
+        }
+        self.check_get_prep_value_nested_streamblocks(stream_data, is_lazy=True)
 
 
 class TestPageChooserBlock(TestCase):
@@ -2870,7 +2929,7 @@ class TestDateBlock(TestCase):
         self.assertIn('"format": "Y-m-d"', result)
 
         self.assertInHTML(
-            '<input id="dateblock" name="dateblock" placeholder="" type="text" value="2015-08-13" />',
+            '<input id="dateblock" name="dateblock" placeholder="" type="text" value="2015-08-13" autocomplete="off" />',
             result
         )
 
@@ -2883,7 +2942,7 @@ class TestDateBlock(TestCase):
         self.assertIn('"dayOfWeekStart": 0', result)
         self.assertIn('"format": "d.m.Y"', result)
         self.assertInHTML(
-            '<input id="dateblock" name="dateblock" placeholder="" type="text" value="13.08.2015" />',
+            '<input id="dateblock" name="dateblock" placeholder="" type="text" value="13.08.2015" autocomplete="off" />',
             result
         )
 
@@ -2899,7 +2958,7 @@ class TestDateTimeBlock(TestCase):
             result
         )
         self.assertInHTML(
-            '<input id="datetimeblock" name="datetimeblock" placeholder="" type="text" value="13.08.2015 10:00" />',
+            '<input id="datetimeblock" name="datetimeblock" placeholder="" type="text" value="13.08.2015 10:00" autocomplete="off" />',
             result
         )
 
