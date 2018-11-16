@@ -20,49 +20,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wagtail\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-11 14:09+0100\n"
+"POT-Creation-Date: 2018-11-16 02:17+0100\n"
 "PO-Revision-Date: 2018-07-13 09:37+0000\n"
 "Last-Translator: Benjamin Thurm\n"
 "Language-Team: German (http://www.transifex.com/torchbox/wagtail/language/"
 "de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: .\core\apps.py:8
 msgid "Wagtail core"
 msgstr "Wagtail Kern"
 
+#: .\core\blocks\static_block.py:15
+#, python-brace-format
 msgid "{label}: this block has no options."
 msgstr "{label}: dieser Block hat keine Einstellmöglichkeiten."
 
+#: .\core\blocks\static_block.py:17
 msgid "This block has no options."
 msgstr "Dieser Block hat keine Einstellmöglichkeiten."
 
+#: .\core\blocks\stream_block.py:199 .\core\blocks\stream_block.py:221
 #, python-format
 msgid "The minimum number of items is %d"
 msgstr "Die minimale Anzahl an Elementen ist %d"
 
+#: .\core\blocks\stream_block.py:202
 msgid "This field is required."
 msgstr "Dieses Feld ist erforderlich."
 
+#: .\core\blocks\stream_block.py:206 .\core\blocks\stream_block.py:225
 #, python-format
 msgid "The maximum number of items is %d"
 msgstr "Die maximale Anzahl an Elementen ist %d"
 
+#: .\core\forms.py:7
 msgid "Password"
 msgstr "Passwort"
 
+#: .\core\forms.py:17
 msgid "The password you have entered is not correct. Please try again."
 msgstr "Das eingegebene Passwort ist falsch. Bitte versuchen Sie es erneut."
 
+#: .\core\models.py:46
 msgid "hostname"
 msgstr "Hostname"
 
+#: .\core\models.py:48
 msgid "port"
 msgstr "Port"
 
+#: .\core\models.py:51
 msgid ""
 "Set this to something other than 80 if you need a specific port number to "
 "appear in URLs (e.g. development on port 8000). Does not affect request "
@@ -72,18 +84,23 @@ msgstr ""
 "soll (z.B. Development Port auf 8000). Dies bezieht sich nicht auf Request "
 "Handling, so dass Port Forwarding weiterhin funktioniert."
 
+#: .\core\models.py:56
 msgid "site name"
 msgstr "Website-Name"
 
+#: .\core\models.py:60
 msgid "Human-readable name for the site."
 msgstr "Für Menschen lesbarer Name für die Website"
 
+#: .\core\models.py:62
 msgid "root page"
 msgstr "Ursprungsseite"
 
+#: .\core\models.py:64
 msgid "is default site"
 msgstr "Ist die standardmäßige Website"
 
+#: .\core\models.py:67
 msgid ""
 "If true, this site will handle requests for all other hostnames that do not "
 "have a site entry of their own"
@@ -91,12 +108,15 @@ msgstr ""
 "Falls ausgewählt wird diese Seite Anfragen für alle Hostnamen annehmen, die "
 "keinen eigenen Seiteneintrag haben."
 
+#: .\core\models.py:75
 msgid "site"
 msgstr "Webseite"
 
+#: .\core\models.py:76
 msgid "sites"
 msgstr "Webseiten"
 
+#: .\core\models.py:145
 #, python-format
 msgid ""
 "%(hostname)s is already configured as the default site. You must unset that "
@@ -105,15 +125,19 @@ msgstr ""
 "%(hostname)s ist bereits als Standardseite eingestellt. Sie müssen diese "
 "Einstellung ändern bevor Sie diese Seite als Standard einstellen können."
 
+#: .\core\models.py:237
 msgid "title"
 msgstr "Titel"
 
+#: .\core\models.py:239
 msgid "The page title as you'd like it to be seen by the public"
 msgstr "Der Seitentitel, der öffentlich angezeigt werden soll"
 
+#: .\core\models.py:247
 msgid "slug"
 msgstr "Kurztitel"
 
+#: .\core\models.py:250
 msgid ""
 "The name of the page as it will appear in URLs e.g http://domain.com/blog/"
 "[my-slug]/"
@@ -121,24 +145,31 @@ msgstr ""
 "Der Name der Seite, wie er in URLs angezeigt werden soll, z.B. http://domain."
 "com/blog/[my-slug]/"
 
+#: .\core\models.py:254
 msgid "content type"
 msgstr "Inhaltstyp"
 
+#: .\core\models.py:258 .\core\models.py:1015
 msgid "live"
 msgstr "Veröffentlicht"
 
+#: .\core\models.py:260
 msgid "has unpublished changes"
 msgstr "hat unveröffentlichte Änderungen"
 
+#: .\core\models.py:264
 msgid "URL path"
 msgstr "URL Pfad"
 
+#: .\core\models.py:267
 msgid "owner"
 msgstr "Eigner"
 
+#: .\core\models.py:276
 msgid "page title"
 msgstr "Seitentitel"
 
+#: .\core\models.py:279
 msgid ""
 "Optional. 'Search Engine Friendly' title. This will appear at the top of the "
 "browser window."
@@ -146,184 +177,247 @@ msgstr ""
 "Optional. Suchmaschinenfreundlicher Titel. Wird in der Titelleiste des "
 "Browsers angezeigt."
 
+#: .\core\models.py:284
 msgid "show in menus"
 msgstr "In Menüs anzeigen"
 
+#: .\core\models.py:286
 msgid ""
 "Whether a link to this page will appear in automatically generated menus"
 msgstr ""
 "Ob ein Link zu dieser Seite in automatisch generierten Menüs auftaucht."
 
+#: .\core\models.py:288
 msgid "search description"
 msgstr "Suchbeschreibung"
 
+#: .\core\models.py:291
 msgid "go live date/time"
 msgstr "Veröffentlicht ab"
 
+#: .\core\models.py:296
 msgid "expiry date/time"
 msgstr "Veröffentlicht bis"
 
+#: .\core\models.py:300 .\core\models.py:1004
 msgid "expired"
 msgstr "abgelaufen"
 
+#: .\core\models.py:302
 msgid "locked"
 msgstr "Gesperrt"
 
+#: .\core\models.py:305
 msgid "first published at"
 msgstr "Zuerst publiziert am"
 
+#: .\core\models.py:311
 msgid "last published at"
 msgstr "zuletzt publiziert am"
 
+#: .\core\models.py:316
 msgid "latest revision created at"
 msgstr "Neuste Revision erstellt am"
 
+#: .\core\models.py:438
 msgid "This slug is already in use"
 msgstr "Dieser Kurztitel wird bereits verwendet"
 
+#: .\core\models.py:1006
 msgid "scheduled"
 msgstr "geplant"
 
+#: .\core\models.py:1008
 msgid "draft"
 msgstr "Entwurf"
 
+#: .\core\models.py:1011
 msgid "live + scheduled"
 msgstr "veröffentlicht + geplant"
 
+#: .\core\models.py:1013
 msgid "live + draft"
 msgstr "Veröffentlicht + Entwurf"
 
+#: .\core\models.py:1280
 msgid "Default"
 msgstr "Standard"
 
+#: .\core\models.py:1390 .\core\models.py:1409 .\core\models.py:1565
+#: .\core\models.py:1924
 msgid "page"
 msgstr "Seite"
 
+#: .\core\models.py:1391
 msgid "pages"
 msgstr "Seiten"
 
+#: .\core\models.py:1411
 msgid "submitted for moderation"
 msgstr "Zur Freischaltung eingereicht"
 
+#: .\core\models.py:1415
 msgid "created at"
 msgstr "Erstellt am"
 
+#: .\core\models.py:1417
 msgid "user"
 msgstr "Benutzer"
 
+#: .\core\models.py:1420
 msgid "content JSON"
 msgstr "JSON Inhalt"
 
+#: .\core\models.py:1421
 msgid "approved go live at"
 msgstr "Freigegeben zur Veröffentlichung am"
 
+#: .\core\models.py:1545
 msgid "page revision"
 msgstr "Seitenrevision"
 
+#: .\core\models.py:1546
 msgid "page revisions"
 msgstr "Seiten Revisionen"
 
+#: .\core\models.py:1550
 msgid "Add"
 msgstr "Hinzufügen"
 
+#: .\core\models.py:1550
 msgid "Add/edit pages you own"
 msgstr "Hinzufügen/Bearbeiten von Seiten, die Sie besitzen"
 
+#: .\core\models.py:1551
 msgid "Edit"
 msgstr "Bearbeiten"
 
+#: .\core\models.py:1551
 msgid "Edit any page"
 msgstr "Jede Seite bearbeiten."
 
+#: .\core\models.py:1552
 msgid "Publish"
 msgstr "Veröffentlichen"
 
+#: .\core\models.py:1552
 msgid "Publish any page"
 msgstr "Jede Seite veröffentlichen"
 
+#: .\core\models.py:1553
 msgid "Bulk delete"
 msgstr "Alles löschen"
 
+#: .\core\models.py:1553
 msgid "Delete pages with children"
 msgstr "Seiten inkl. Unterseiten löschen"
 
+#: .\core\models.py:1554
 msgid "Lock"
 msgstr "Sperren"
 
+#: .\core\models.py:1554
 msgid "Lock/unlock any page"
 msgstr "Sperren/Entsperren jeder Seite"
 
+#: .\core\models.py:1564 .\core\models.py:2023
 msgid "group"
 msgstr "Gruppe"
 
+#: .\core\models.py:1567
 msgid "permission type"
 msgstr "Berechtigungstyp"
 
+#: .\core\models.py:1574
 msgid "group page permission"
 msgstr "Gruppen Seitenberechtigung"
 
+#: .\core\models.py:1575
 msgid "group page permissions"
 msgstr "Gruppen Seitenberechtigungen"
 
+#: .\core\models.py:1871
 msgid "Public"
 msgstr "Öffentlich"
 
+#: .\core\models.py:1872
 msgid "Private, accessible to logged-in users"
 msgstr "Privat, nur für angemeldete Benutzer einsehbar"
 
+#: .\core\models.py:1873
 msgid "Private, accessible with the following password"
 msgstr "Privat, einsehbar mit folgendem Passwort"
 
+#: .\core\models.py:1874
 msgid "Private, accessible to users in specific groups"
 msgstr "Privat, einsehbar für Benutzer in bestimmten Gruppen"
 
+#: .\core\models.py:1879
 msgid "password"
 msgstr "Passwort"
 
+#: .\core\models.py:1880
 msgid "groups"
 msgstr "Gruppen"
 
+#: .\core\models.py:1918
 msgid "view restriction"
 msgstr "Ansichtsrestriktion"
 
+#: .\core\models.py:1919
 msgid "view restrictions"
 msgstr "Ansichtsrestriktionen"
 
+#: .\core\models.py:1930
 msgid "page view restriction"
 msgstr "Seiten Ansichtsrestriktion"
 
+#: .\core\models.py:1931
 msgid "page view restrictions"
 msgstr "Seiten Ansichtsrestriktionen"
 
+#: .\core\models.py:1945 .\core\models.py:1988 .\core\models.py:2003
+#: .\core\models.py:2029
 msgid "collection"
 msgstr "Sammlung"
 
+#: .\core\models.py:1953
 msgid "collection view restriction"
 msgstr "Sammlung Ansichtsrestriktion"
 
+#: .\core\models.py:1954
 msgid "collection view restrictions"
 msgstr "Sammlung Ansichtsrestriktionen"
 
+#: .\core\models.py:1961
 msgid "name"
 msgstr "Name"
 
+#: .\core\models.py:1989
 msgid "collections"
 msgstr "Sammlungen"
 
+#: .\core\models.py:2035
 msgid "permission"
 msgstr "Berechtigung"
 
+#: .\core\models.py:2048
 msgid "group collection permission"
 msgstr "Gruppen Sammlungsberechtigungen"
 
+#: .\core\templates\wagtailcore\login.html:5
+#: .\core\templates\wagtailcore\login.html:8
+#: .\core\templates\wagtailcore\login.html:21
 msgid "Log in"
 msgstr "Anmelden"
 
+#: .\core\templates\wagtailcore\login.html:11
 msgid "Your username and password didn't match. Please try again."
 msgstr ""
 "Ihr Benutzername und Ihr Passwort wurden nicht erkannt. Bitte versuchen Sie "
 "es erneut!"
 
+#: .\core\templates\wagtailcore\login.html:15
 msgid ""
 "Your account doesn't have access to this page. To proceed, please log in "
 "with an account that has access."
@@ -331,11 +425,15 @@ msgstr ""
 "Ihr Konto hat keinen Zugang zu dieser Seite. Um fortzufahren melden Sie sich "
 "mit einem Konto an, das Zugang hat."
 
+#: .\core\templates\wagtailcore\password_required.html:5
+#: .\core\templates\wagtailcore\password_required.html:8
 msgid "Password required"
 msgstr "Passwort erforderlich"
 
+#: .\core\templates\wagtailcore\password_required.html:10
 msgid "You need a password to access this page."
 msgstr "Sie benötigen ein Passwort um diese Seite aufzurufen."
 
+#: .\core\templates\wagtailcore\password_required.html:15
 msgid "Continue"
 msgstr "Weiter"

@@ -1,0 +1,447 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Thijs Kramer <thijskramer@gmail.com>, 2015
+# Thijs Kramer <thijskramer@gmail.com>, 2015-2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Wagtail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-16 02:16+0100\n"
+"PO-Revision-Date: 2018-05-04 19:30+0000\n"
+"Last-Translator: Matt Westcott <matthew@torchbox.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/torchbox/wagtail/language/"
+"nl/)\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\apps.py:8
+msgid "Wagtail core"
+msgstr ""
+
+#: .\core\blocks\static_block.py:15
+#, python-brace-format
+msgid "{label}: this block has no options."
+msgstr ""
+
+#: .\core\blocks\static_block.py:17
+msgid "This block has no options."
+msgstr ""
+
+#: .\core\blocks\stream_block.py:199 .\core\blocks\stream_block.py:221
+#, python-format
+msgid "The minimum number of items is %d"
+msgstr ""
+
+#: .\core\blocks\stream_block.py:202
+msgid "This field is required."
+msgstr ""
+
+#: .\core\blocks\stream_block.py:206 .\core\blocks\stream_block.py:225
+#, python-format
+msgid "The maximum number of items is %d"
+msgstr ""
+
+#: .\core\forms.py:7
+msgid "Password"
+msgstr ""
+
+#: .\core\forms.py:17
+msgid "The password you have entered is not correct. Please try again."
+msgstr ""
+
+#: .\core\models.py:46
+msgid "hostname"
+msgstr "hostname"
+
+#: .\core\models.py:48
+msgid "port"
+msgstr "poortnummer"
+
+#: .\core\models.py:51
+msgid ""
+"Set this to something other than 80 if you need a specific port number to "
+"appear in URLs (e.g. development on port 8000). Does not affect request "
+"handling (so port forwarding still works)."
+msgstr ""
+"Stel dit op iets anders dan 80 in als er een specifiek poortnummer in de URL "
+"moet komen (bijv. development op poort 8000). Dit heeft geen effect op "
+"request afhandeling (dus port forwarding blijft werken)."
+
+#: .\core\models.py:56
+msgid "site name"
+msgstr "sitenaam"
+
+#: .\core\models.py:60
+msgid "Human-readable name for the site."
+msgstr "Leesbare naam voor de site."
+
+#: .\core\models.py:62
+msgid "root page"
+msgstr "beginpagina"
+
+#: .\core\models.py:64
+msgid "is default site"
+msgstr "is standaard site"
+
+#: .\core\models.py:67
+msgid ""
+"If true, this site will handle requests for all other hostnames that do not "
+"have a site entry of their own"
+msgstr ""
+"Indien aangevinkt zal deze site requests voor alle andere hostnames afvangen "
+"die geen eigen site hebben."
+
+#: .\core\models.py:75
+msgid "site"
+msgstr "site"
+
+#: .\core\models.py:76
+msgid "sites"
+msgstr "sites"
+
+#: .\core\models.py:145
+#, python-format
+msgid ""
+"%(hostname)s is already configured as the default site. You must unset that "
+"before you can save this site as default."
+msgstr ""
+"%(hostname)s is al geconfigureerd als de default site. Deze moet worden "
+"aangepast voordat deze site als default kan worden aangemerkt."
+
+#: .\core\models.py:237
+msgid "title"
+msgstr "titel"
+
+#: .\core\models.py:239
+msgid "The page title as you'd like it to be seen by the public"
+msgstr "De paginatitel zoals u wilt dat uw bezoekers dit zien"
+
+#: .\core\models.py:247
+msgid "slug"
+msgstr "slug"
+
+#: .\core\models.py:250
+msgid ""
+"The name of the page as it will appear in URLs e.g http://domain.com/blog/"
+"[my-slug]/"
+msgstr ""
+"De manier waarop de pagina in URL's getoond wordt, bijv. http://domein.nl/"
+"blog/[mijn-slug]/"
+
+#: .\core\models.py:254
+msgid "content type"
+msgstr "inhoudstype"
+
+#: .\core\models.py:258 .\core\models.py:1015
+msgid "live"
+msgstr "live"
+
+#: .\core\models.py:260
+msgid "has unpublished changes"
+msgstr "heeft ongepubliceerde wijzigingen"
+
+#: .\core\models.py:264
+msgid "URL path"
+msgstr "URL pad"
+
+#: .\core\models.py:267
+msgid "owner"
+msgstr "eigenaar"
+
+#: .\core\models.py:276
+msgid "page title"
+msgstr "paginatitel"
+
+#: .\core\models.py:279
+msgid ""
+"Optional. 'Search Engine Friendly' title. This will appear at the top of the "
+"browser window."
+msgstr ""
+"Optioneel. 'Zoek machine vriendelijke' titel. Deze zal als browsertitel "
+"fungeren. "
+
+#: .\core\models.py:284
+msgid "show in menus"
+msgstr "toon in menu's"
+
+#: .\core\models.py:286
+msgid ""
+"Whether a link to this page will appear in automatically generated menus"
+msgstr ""
+"Of een link naar deze pagina in automatisch gegenereerde menu's zal "
+"verschijnen "
+
+#: .\core\models.py:288
+msgid "search description"
+msgstr "zoekomschrijving"
+
+#: .\core\models.py:291
+msgid "go live date/time"
+msgstr "datum/tijd livegang"
+
+#: .\core\models.py:296
+msgid "expiry date/time"
+msgstr "verloopdatum/tijd"
+
+#: .\core\models.py:300 .\core\models.py:1004
+msgid "expired"
+msgstr "verlopen"
+
+#: .\core\models.py:302
+msgid "locked"
+msgstr "vergrendeld"
+
+#: .\core\models.py:305
+msgid "first published at"
+msgstr "voor het eerst gepubliceerd op"
+
+#: .\core\models.py:311
+#, fuzzy
+#| msgid "first published at"
+msgid "last published at"
+msgstr "voor het eerst gepubliceerd op"
+
+#: .\core\models.py:316
+msgid "latest revision created at"
+msgstr "laatste versie aangemaakt op"
+
+#: .\core\models.py:438
+msgid "This slug is already in use"
+msgstr ""
+
+#: .\core\models.py:1006
+msgid "scheduled"
+msgstr "ingepland"
+
+#: .\core\models.py:1008
+msgid "draft"
+msgstr "concept"
+
+#: .\core\models.py:1011
+#, fuzzy
+#| msgid "scheduled"
+msgid "live + scheduled"
+msgstr "ingepland"
+
+#: .\core\models.py:1013
+msgid "live + draft"
+msgstr "live + concept"
+
+#: .\core\models.py:1280
+msgid "Default"
+msgstr "Standaard"
+
+#: .\core\models.py:1390 .\core\models.py:1409 .\core\models.py:1565
+#: .\core\models.py:1924
+msgid "page"
+msgstr "pagina"
+
+#: .\core\models.py:1391
+msgid "pages"
+msgstr "pagina's"
+
+#: .\core\models.py:1411
+msgid "submitted for moderation"
+msgstr ""
+
+#: .\core\models.py:1415
+msgid "created at"
+msgstr "gemaakt op"
+
+#: .\core\models.py:1417
+msgid "user"
+msgstr ""
+
+#: .\core\models.py:1420
+#, fuzzy
+#| msgid "content type"
+msgid "content JSON"
+msgstr "inhoudstype"
+
+#: .\core\models.py:1421
+msgid "approved go live at"
+msgstr ""
+
+#: .\core\models.py:1545
+msgid "page revision"
+msgstr "pagina versie"
+
+#: .\core\models.py:1546
+msgid "page revisions"
+msgstr "pagina versies"
+
+#: .\core\models.py:1550
+msgid "Add"
+msgstr ""
+
+#: .\core\models.py:1550
+msgid "Add/edit pages you own"
+msgstr "Alle pagina's toevoegen of bewerken die je beheert"
+
+#: .\core\models.py:1551
+msgid "Edit"
+msgstr ""
+
+#: .\core\models.py:1551
+msgid "Edit any page"
+msgstr "Alle pagina's bewerken"
+
+#: .\core\models.py:1552
+#, fuzzy
+#| msgid "Publish any page"
+msgid "Publish"
+msgstr "Alle pagina's publiceren"
+
+#: .\core\models.py:1552
+msgid "Publish any page"
+msgstr "Alle pagina's publiceren"
+
+#: .\core\models.py:1553
+msgid "Bulk delete"
+msgstr ""
+
+#: .\core\models.py:1553
+msgid "Delete pages with children"
+msgstr ""
+
+#: .\core\models.py:1554
+msgid "Lock"
+msgstr ""
+
+#: .\core\models.py:1554
+msgid "Lock/unlock any page"
+msgstr "Alle pagina's vergrendelen of ontgrendelen"
+
+#: .\core\models.py:1564 .\core\models.py:2023
+msgid "group"
+msgstr ""
+
+#: .\core\models.py:1567
+msgid "permission type"
+msgstr ""
+
+#: .\core\models.py:1574
+msgid "group page permission"
+msgstr "Groep pagina bevoegdheid"
+
+#: .\core\models.py:1575
+msgid "group page permissions"
+msgstr "Groep pagina bevoegdheden"
+
+#: .\core\models.py:1871
+msgid "Public"
+msgstr ""
+
+#: .\core\models.py:1872
+msgid "Private, accessible to logged-in users"
+msgstr ""
+
+#: .\core\models.py:1873
+msgid "Private, accessible with the following password"
+msgstr ""
+
+#: .\core\models.py:1874
+msgid "Private, accessible to users in specific groups"
+msgstr ""
+
+#: .\core\models.py:1879
+msgid "password"
+msgstr ""
+
+#: .\core\models.py:1880
+msgid "groups"
+msgstr ""
+
+#: .\core\models.py:1918
+#, fuzzy
+#| msgid "page view restriction"
+msgid "view restriction"
+msgstr "Pagina bekijk beperking"
+
+#: .\core\models.py:1919
+#, fuzzy
+#| msgid "page view restrictions"
+msgid "view restrictions"
+msgstr "Pagina bekijk beperkingen"
+
+#: .\core\models.py:1930
+msgid "page view restriction"
+msgstr "Pagina bekijk beperking"
+
+#: .\core\models.py:1931
+msgid "page view restrictions"
+msgstr "Pagina bekijk beperkingen"
+
+#: .\core\models.py:1945 .\core\models.py:1988 .\core\models.py:2003
+#: .\core\models.py:2029
+msgid "collection"
+msgstr ""
+
+#: .\core\models.py:1953
+#, fuzzy
+#| msgid "page view restriction"
+msgid "collection view restriction"
+msgstr "Pagina bekijk beperking"
+
+#: .\core\models.py:1954
+#, fuzzy
+#| msgid "page view restrictions"
+msgid "collection view restrictions"
+msgstr "Pagina bekijk beperkingen"
+
+#: .\core\models.py:1961
+#, fuzzy
+#| msgid "hostname"
+msgid "name"
+msgstr "hostname"
+
+#: .\core\models.py:1989
+msgid "collections"
+msgstr ""
+
+#: .\core\models.py:2035
+#, fuzzy
+#| msgid "page revision"
+msgid "permission"
+msgstr "pagina versie"
+
+#: .\core\models.py:2048
+#, fuzzy
+#| msgid "group page permission"
+msgid "group collection permission"
+msgstr "Groep pagina bevoegdheid"
+
+#: .\core\templates\wagtailcore\login.html:5
+#: .\core\templates\wagtailcore\login.html:8
+#: .\core\templates\wagtailcore\login.html:21
+msgid "Log in"
+msgstr ""
+
+#: .\core\templates\wagtailcore\login.html:11
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+
+#: .\core\templates\wagtailcore\login.html:15
+msgid ""
+"Your account doesn't have access to this page. To proceed, please log in "
+"with an account that has access."
+msgstr ""
+
+#: .\core\templates\wagtailcore\password_required.html:5
+#: .\core\templates\wagtailcore\password_required.html:8
+msgid "Password required"
+msgstr ""
+
+#: .\core\templates\wagtailcore\password_required.html:10
+msgid "You need a password to access this page."
+msgstr ""
+
+#: .\core\templates\wagtailcore\password_required.html:15
+msgid "Continue"
+msgstr ""
