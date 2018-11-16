@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load i18n wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+<h1>HOME</h1>
+    {{ page.body|richtext }}
+<div>
+
+    <h2>{% trans 'Tekst do przetłumaczenia' %}</h2>
+</div>
+
+<div>
+    {% include 'lang_picker.html' %}
+</div>
+{% endblock %}

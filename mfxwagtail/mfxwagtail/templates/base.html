@@ -23,6 +23,8 @@
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
+        <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+
     </head>
 
     <body class="{% block body_class %}{% endblock %}">

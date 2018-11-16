@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wagtail\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 02:16+0100\n"
+"POT-Creation-Date: 2018-11-16 02:54+0100\n"
 "PO-Revision-Date: 2018-05-15 08:25+0000\n"
 "Last-Translator: Miłosz Miśkiewicz\n"
 "Language-Team: Polish (http://www.transifex.com/torchbox/wagtail/language/"
@@ -24,380 +24,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
 "%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-
-#: .\core\apps.py:8
-msgid "Wagtail core"
-msgstr "Rdzeń Wagtail"
-
-#: .\core\blocks\static_block.py:15
-#, python-brace-format
-msgid "{label}: this block has no options."
-msgstr "{label}: ten blok nie posiada opcji."
-
-#: .\core\blocks\static_block.py:17
-msgid "This block has no options."
-msgstr "Ten block nie posiada opcji."
-
-#: .\core\blocks\stream_block.py:199 .\core\blocks\stream_block.py:221
-#, python-format
-msgid "The minimum number of items is %d"
-msgstr "Minimalna ilość elementów to %d"
-
-#: .\core\blocks\stream_block.py:202
-msgid "This field is required."
-msgstr "To pole jest wymagane."
-
-#: .\core\blocks\stream_block.py:206 .\core\blocks\stream_block.py:225
-#, python-format
-msgid "The maximum number of items is %d"
-msgstr "Maksymalna ilość elementów to %d"
-
-#: .\core\forms.py:7
-msgid "Password"
-msgstr "Hasło"
-
-#: .\core\forms.py:17
-msgid "The password you have entered is not correct. Please try again."
-msgstr "Wprowadzone hasło nie jest prawidłowe. Proszę spróbować ponownie."
-
-#: .\core\models.py:46
-msgid "hostname"
-msgstr "nazwa hosta"
-
-#: .\core\models.py:48
-msgid "port"
-msgstr "port"
-
-#: .\core\models.py:51
-msgid ""
-"Set this to something other than 80 if you need a specific port number to "
-"appear in URLs (e.g. development on port 8000). Does not affect request "
-"handling (so port forwarding still works)."
-msgstr ""
-"Ustaw na inną wartość niż 80 jeżeli istnieje potrzeba pojawienia się "
-"konkretnego portu w URLach (np. port wersji roboczej 8000). Nie ma wpływu na "
-"obsługę żądań (przekierowanie portów będzie nadal działało)."
-
-#: .\core\models.py:56
-msgid "site name"
-msgstr "Nazwa strony"
-
-#: .\core\models.py:60
-msgid "Human-readable name for the site."
-msgstr "Nazwa strony przyjazna człowiekowi"
-
-#: .\core\models.py:62
-msgid "root page"
-msgstr "Strona nadrzędna"
-
-#: .\core\models.py:64
-msgid "is default site"
-msgstr "czy strona domyślna"
-
-#: .\core\models.py:67
-msgid ""
-"If true, this site will handle requests for all other hostnames that do not "
-"have a site entry of their own"
-msgstr ""
-"Wartość true sprawi, że ta strona będzie obsługiwała żądania wszystkich "
-"innych hostów, które nie mają ustawionej strony."
-
-#: .\core\models.py:75
-msgid "site"
-msgstr "strona"
-
-#: .\core\models.py:76
-msgid "sites"
-msgstr "strony"
-
-#: .\core\models.py:145
-#, python-format
-msgid ""
-"%(hostname)s is already configured as the default site. You must unset that "
-"before you can save this site as default."
-msgstr ""
-"%(hostname)s jest już skonfigurowana jako domyślna strona. Przed zapisem "
-"strony jako domyślna musisz usunąć to ustawienie."
-
-#: .\core\models.py:237
-msgid "title"
-msgstr "tytuł"
-
-#: .\core\models.py:239
-msgid "The page title as you'd like it to be seen by the public"
-msgstr "Tytuł strony jaki chcesz żeby był widoczny publicznie."
-
-#: .\core\models.py:247
-msgid "slug"
-msgstr "slug"
-
-#: .\core\models.py:250
-msgid ""
-"The name of the page as it will appear in URLs e.g http://domain.com/blog/"
-"[my-slug]/"
-msgstr ""
-"Nazwa strony, która będzie wyświetlana w URLach np. http://domain.com/blog/"
-"[my-slug]/"
-
-#: .\core\models.py:254
-msgid "content type"
-msgstr "rodzaj zawartości"
-
-#: .\core\models.py:258 .\core\models.py:1015
-msgid "live"
-msgstr "opublikowana"
-
-#: .\core\models.py:260
-msgid "has unpublished changes"
-msgstr "posiada niezapisane zmiany"
-
-#: .\core\models.py:264
-msgid "URL path"
-msgstr "Ścieżka URL"
-
-#: .\core\models.py:267
-msgid "owner"
-msgstr "właściciel"
-
-#: .\core\models.py:276
-msgid "page title"
-msgstr "tytuł strony"
-
-#: .\core\models.py:279
-msgid ""
-"Optional. 'Search Engine Friendly' title. This will appear at the top of the "
-"browser window."
-msgstr ""
-"Opcjonalne. Tytuł 'przyjazny wyszukiwarkom'. Będzie widoczny się na górze "
-"okna przeglądarki."
-
-#: .\core\models.py:284
-msgid "show in menus"
-msgstr "pokazuj w menu"
-
-#: .\core\models.py:286
-msgid ""
-"Whether a link to this page will appear in automatically generated menus"
-msgstr ""
-"Czy link do tej strony zostanie wyświetlony w menu tworzonym automatycznie."
-
-#: .\core\models.py:288
-msgid "search description"
-msgstr "opis wyszukiwania"
-
-#: .\core\models.py:291
-msgid "go live date/time"
-msgstr "data/czas publikacji"
-
-#: .\core\models.py:296
-msgid "expiry date/time"
-msgstr "data/czas wygaśnięcia"
-
-#: .\core\models.py:300 .\core\models.py:1004
-msgid "expired"
-msgstr "wygaśnięte"
-
-#: .\core\models.py:302
-msgid "locked"
-msgstr "zablokowany"
-
-#: .\core\models.py:305
-msgid "first published at"
-msgstr "pierwsza publikacja w dniu"
-
-#: .\core\models.py:311
-msgid "last published at"
-msgstr "ostatnio opublikowany"
-
-#: .\core\models.py:316
-msgid "latest revision created at"
-msgstr "ostatnia rewizja utworzona"
-
-#: .\core\models.py:438
-msgid "This slug is already in use"
-msgstr "Ten slug jest już w użyciu"
-
-#: .\core\models.py:1006
-msgid "scheduled"
-msgstr "zaplanowany"
-
-#: .\core\models.py:1008
-msgid "draft"
-msgstr "szkic"
-
-#: .\core\models.py:1011
-msgid "live + scheduled"
-msgstr "opublikowane + zaplanowane"
-
-#: .\core\models.py:1013
-msgid "live + draft"
-msgstr "opublikuj + szkic"
-
-#: .\core\models.py:1280
-msgid "Default"
-msgstr "Domyślny"
-
-#: .\core\models.py:1390 .\core\models.py:1409 .\core\models.py:1565
-#: .\core\models.py:1924
-msgid "page"
-msgstr "strona"
-
-#: .\core\models.py:1391
-msgid "pages"
-msgstr "strony"
-
-#: .\core\models.py:1411
-msgid "submitted for moderation"
-msgstr "przesłano do moderacji"
-
-#: .\core\models.py:1415
-msgid "created at"
-msgstr "utworzono dnia"
-
-#: .\core\models.py:1417
-msgid "user"
-msgstr "użytkownik"
-
-#: .\core\models.py:1420
-msgid "content JSON"
-msgstr "zawartość JSON"
-
-#: .\core\models.py:1421
-msgid "approved go live at"
-msgstr "Zaakceptowano publikację w dniu"
-
-#: .\core\models.py:1545
-msgid "page revision"
-msgstr "wersja strony"
-
-#: .\core\models.py:1546
-msgid "page revisions"
-msgstr "wersje strony"
-
-#: .\core\models.py:1550
-msgid "Add"
-msgstr "Dodaj"
-
-#: .\core\models.py:1550
-msgid "Add/edit pages you own"
-msgstr "Dodaj/edytuj swoje strony"
-
-#: .\core\models.py:1551
-msgid "Edit"
-msgstr "Edytuj"
-
-#: .\core\models.py:1551
-msgid "Edit any page"
-msgstr "Edytuj dowolną stronę"
-
-#: .\core\models.py:1552
-msgid "Publish"
-msgstr "Opublikuj"
-
-#: .\core\models.py:1552
-msgid "Publish any page"
-msgstr "Publikuj dowolną stronę"
-
-#: .\core\models.py:1553
-msgid "Bulk delete"
-msgstr "Seryjne usunięcie"
-
-#: .\core\models.py:1553
-msgid "Delete pages with children"
-msgstr "Usuń strony z podstronami"
-
-#: .\core\models.py:1554
-msgid "Lock"
-msgstr "Zablokuj"
-
-#: .\core\models.py:1554
-msgid "Lock/unlock any page"
-msgstr "Zablokuj/odblokuj dowolną stronę"
-
-#: .\core\models.py:1564 .\core\models.py:2023
-msgid "group"
-msgstr "grupa"
-
-#: .\core\models.py:1567
-msgid "permission type"
-msgstr "typ uprawnień"
-
-#: .\core\models.py:1574
-msgid "group page permission"
-msgstr "uprawnienie grupy do strony"
-
-#: .\core\models.py:1575
-msgid "group page permissions"
-msgstr "uprawnienia grupy do strony"
-
-#: .\core\models.py:1871
-msgid "Public"
-msgstr "Publiczna"
-
-#: .\core\models.py:1872
-msgid "Private, accessible to logged-in users"
-msgstr "Prywatne, dostępne dla zalogowanych użytkowników"
-
-#: .\core\models.py:1873
-msgid "Private, accessible with the following password"
-msgstr "Prywatne, dostępne za pomocą poniższego hasła"
-
-#: .\core\models.py:1874
-msgid "Private, accessible to users in specific groups"
-msgstr "Prywatne, dostępne dla wybranych grup"
-
-#: .\core\models.py:1879
-msgid "password"
-msgstr "hasło"
-
-#: .\core\models.py:1880
-msgid "groups"
-msgstr "grupy"
-
-#: .\core\models.py:1918
-msgid "view restriction"
-msgstr "restrykcja widoczności"
-
-#: .\core\models.py:1919
-msgid "view restrictions"
-msgstr "restrykcje widoczności"
-
-#: .\core\models.py:1930
-msgid "page view restriction"
-msgstr "restrykcja wyświetlenia strony"
-
-#: .\core\models.py:1931
-msgid "page view restrictions"
-msgstr "restrykcje wyświetlenia strony"
-
-#: .\core\models.py:1945 .\core\models.py:1988 .\core\models.py:2003
-#: .\core\models.py:2029
-msgid "collection"
-msgstr "kolekcja"
-
-#: .\core\models.py:1953
-msgid "collection view restriction"
-msgstr "restrykcja widoczności kolekcji"
-
-#: .\core\models.py:1954
-msgid "collection view restrictions"
-msgstr "restrykcje widoczności kolekcji"
-
-#: .\core\models.py:1961
-msgid "name"
-msgstr "nazwa"
-
-#: .\core\models.py:1989
-msgid "collections"
-msgstr "kolekcje"
-
-#: .\core\models.py:2035
-msgid "permission"
-msgstr "uprawnienia"
-
-#: .\core\models.py:2048
-msgid "group collection permission"
-msgstr "uprawnienia kolekcji grup"
 
 #: .\core\templates\wagtailcore\login.html:5
 #: .\core\templates\wagtailcore\login.html:8
@@ -430,3 +56,286 @@ msgstr "Musisz podać hasło aby uzyskać dostęp do tej strony."
 #: .\core\templates\wagtailcore\password_required.html:15
 msgid "Continue"
 msgstr "Kontynuuj"
+
+#~ msgid "Wagtail core"
+#~ msgstr "Rdzeń Wagtail"
+
+#~ msgid "{label}: this block has no options."
+#~ msgstr "{label}: ten blok nie posiada opcji."
+
+#~ msgid "This block has no options."
+#~ msgstr "Ten block nie posiada opcji."
+
+#~ msgid "The minimum number of items is %d"
+#~ msgstr "Minimalna ilość elementów to %d"
+
+#~ msgid "This field is required."
+#~ msgstr "To pole jest wymagane."
+
+#~ msgid "The maximum number of items is %d"
+#~ msgstr "Maksymalna ilość elementów to %d"
+
+#~ msgid "Password"
+#~ msgstr "Hasło"
+
+#~ msgid "The password you have entered is not correct. Please try again."
+#~ msgstr "Wprowadzone hasło nie jest prawidłowe. Proszę spróbować ponownie."
+
+#~ msgid "hostname"
+#~ msgstr "nazwa hosta"
+
+#~ msgid "port"
+#~ msgstr "port"
+
+#~ msgid ""
+#~ "Set this to something other than 80 if you need a specific port number to "
+#~ "appear in URLs (e.g. development on port 8000). Does not affect request "
+#~ "handling (so port forwarding still works)."
+#~ msgstr ""
+#~ "Ustaw na inną wartość niż 80 jeżeli istnieje potrzeba pojawienia się "
+#~ "konkretnego portu w URLach (np. port wersji roboczej 8000). Nie ma wpływu "
+#~ "na obsługę żądań (przekierowanie portów będzie nadal działało)."
+
+#~ msgid "site name"
+#~ msgstr "Nazwa strony"
+
+#~ msgid "Human-readable name for the site."
+#~ msgstr "Nazwa strony przyjazna człowiekowi"
+
+#~ msgid "root page"
+#~ msgstr "Strona nadrzędna"
+
+#~ msgid "is default site"
+#~ msgstr "czy strona domyślna"
+
+#~ msgid ""
+#~ "If true, this site will handle requests for all other hostnames that do "
+#~ "not have a site entry of their own"
+#~ msgstr ""
+#~ "Wartość true sprawi, że ta strona będzie obsługiwała żądania wszystkich "
+#~ "innych hostów, które nie mają ustawionej strony."
+
+#~ msgid "site"
+#~ msgstr "strona"
+
+#~ msgid "sites"
+#~ msgstr "strony"
+
+#~ msgid ""
+#~ "%(hostname)s is already configured as the default site. You must unset "
+#~ "that before you can save this site as default."
+#~ msgstr ""
+#~ "%(hostname)s jest już skonfigurowana jako domyślna strona. Przed zapisem "
+#~ "strony jako domyślna musisz usunąć to ustawienie."
+
+#~ msgid "title"
+#~ msgstr "tytuł"
+
+#~ msgid "The page title as you'd like it to be seen by the public"
+#~ msgstr "Tytuł strony jaki chcesz żeby był widoczny publicznie."
+
+#~ msgid "slug"
+#~ msgstr "slug"
+
+#~ msgid ""
+#~ "The name of the page as it will appear in URLs e.g http://domain.com/blog/"
+#~ "[my-slug]/"
+#~ msgstr ""
+#~ "Nazwa strony, która będzie wyświetlana w URLach np. http://domain.com/"
+#~ "blog/[my-slug]/"
+
+#~ msgid "content type"
+#~ msgstr "rodzaj zawartości"
+
+#~ msgid "live"
+#~ msgstr "opublikowana"
+
+#~ msgid "has unpublished changes"
+#~ msgstr "posiada niezapisane zmiany"
+
+#~ msgid "URL path"
+#~ msgstr "Ścieżka URL"
+
+#~ msgid "owner"
+#~ msgstr "właściciel"
+
+#~ msgid "page title"
+#~ msgstr "tytuł strony"
+
+#~ msgid ""
+#~ "Optional. 'Search Engine Friendly' title. This will appear at the top of "
+#~ "the browser window."
+#~ msgstr ""
+#~ "Opcjonalne. Tytuł 'przyjazny wyszukiwarkom'. Będzie widoczny się na górze "
+#~ "okna przeglądarki."
+
+#~ msgid "show in menus"
+#~ msgstr "pokazuj w menu"
+
+#~ msgid ""
+#~ "Whether a link to this page will appear in automatically generated menus"
+#~ msgstr ""
+#~ "Czy link do tej strony zostanie wyświetlony w menu tworzonym "
+#~ "automatycznie."
+
+#~ msgid "search description"
+#~ msgstr "opis wyszukiwania"
+
+#~ msgid "go live date/time"
+#~ msgstr "data/czas publikacji"
+
+#~ msgid "expiry date/time"
+#~ msgstr "data/czas wygaśnięcia"
+
+#~ msgid "expired"
+#~ msgstr "wygaśnięte"
+
+#~ msgid "locked"
+#~ msgstr "zablokowany"
+
+#~ msgid "first published at"
+#~ msgstr "pierwsza publikacja w dniu"
+
+#~ msgid "last published at"
+#~ msgstr "ostatnio opublikowany"
+
+#~ msgid "latest revision created at"
+#~ msgstr "ostatnia rewizja utworzona"
+
+#~ msgid "This slug is already in use"
+#~ msgstr "Ten slug jest już w użyciu"
+
+#~ msgid "scheduled"
+#~ msgstr "zaplanowany"
+
+#~ msgid "draft"
+#~ msgstr "szkic"
+
+#~ msgid "live + scheduled"
+#~ msgstr "opublikowane + zaplanowane"
+
+#~ msgid "live + draft"
+#~ msgstr "opublikuj + szkic"
+
+#~ msgid "Default"
+#~ msgstr "Domyślny"
+
+#~ msgid "page"
+#~ msgstr "strona"
+
+#~ msgid "pages"
+#~ msgstr "strony"
+
+#~ msgid "submitted for moderation"
+#~ msgstr "przesłano do moderacji"
+
+#~ msgid "created at"
+#~ msgstr "utworzono dnia"
+
+#~ msgid "user"
+#~ msgstr "użytkownik"
+
+#~ msgid "content JSON"
+#~ msgstr "zawartość JSON"
+
+#~ msgid "approved go live at"
+#~ msgstr "Zaakceptowano publikację w dniu"
+
+#~ msgid "page revision"
+#~ msgstr "wersja strony"
+
+#~ msgid "page revisions"
+#~ msgstr "wersje strony"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
+
+#~ msgid "Add/edit pages you own"
+#~ msgstr "Dodaj/edytuj swoje strony"
+
+#~ msgid "Edit"
+#~ msgstr "Edytuj"
+
+#~ msgid "Edit any page"
+#~ msgstr "Edytuj dowolną stronę"
+
+#~ msgid "Publish"
+#~ msgstr "Opublikuj"
+
+#~ msgid "Publish any page"
+#~ msgstr "Publikuj dowolną stronę"
+
+#~ msgid "Bulk delete"
+#~ msgstr "Seryjne usunięcie"
+
+#~ msgid "Delete pages with children"
+#~ msgstr "Usuń strony z podstronami"
+
+#~ msgid "Lock"
+#~ msgstr "Zablokuj"
+
+#~ msgid "Lock/unlock any page"
+#~ msgstr "Zablokuj/odblokuj dowolną stronę"
+
+#~ msgid "group"
+#~ msgstr "grupa"
+
+#~ msgid "permission type"
+#~ msgstr "typ uprawnień"
+
+#~ msgid "group page permission"
+#~ msgstr "uprawnienie grupy do strony"
+
+#~ msgid "group page permissions"
+#~ msgstr "uprawnienia grupy do strony"
+
+#~ msgid "Public"
+#~ msgstr "Publiczna"
+
+#~ msgid "Private, accessible to logged-in users"
+#~ msgstr "Prywatne, dostępne dla zalogowanych użytkowników"
+
+#~ msgid "Private, accessible with the following password"
+#~ msgstr "Prywatne, dostępne za pomocą poniższego hasła"
+
+#~ msgid "Private, accessible to users in specific groups"
+#~ msgstr "Prywatne, dostępne dla wybranych grup"
+
+#~ msgid "password"
+#~ msgstr "hasło"
+
+#~ msgid "groups"
+#~ msgstr "grupy"
+
+#~ msgid "view restriction"
+#~ msgstr "restrykcja widoczności"
+
+#~ msgid "view restrictions"
+#~ msgstr "restrykcje widoczności"
+
+#~ msgid "page view restriction"
+#~ msgstr "restrykcja wyświetlenia strony"
+
+#~ msgid "page view restrictions"
+#~ msgstr "restrykcje wyświetlenia strony"
+
+#~ msgid "collection"
+#~ msgstr "kolekcja"
+
+#~ msgid "collection view restriction"
+#~ msgstr "restrykcja widoczności kolekcji"
+
+#~ msgid "collection view restrictions"
+#~ msgstr "restrykcje widoczności kolekcji"
+
+#~ msgid "name"
+#~ msgstr "nazwa"
+
+#~ msgid "collections"
+#~ msgstr "kolekcje"
+
+#~ msgid "permission"
+#~ msgstr "uprawnienia"
+
+#~ msgid "group collection permission"
+#~ msgstr "uprawnienia kolekcji grup"
