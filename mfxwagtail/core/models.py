@@ -43,7 +43,18 @@ class SiteManager(models.Manager):
 
 
 class Site(models.Model):
-    hostname = models.CharField(verbose_name=_('hostname'), max_length=255, db_index=True)
+    LANGUAGE_CHOICES = settings.LANGUAGES
+
+    language = models.CharField(
+        verbose_name=_(u'język'),
+        max_length=2,
+        choices=LANGUAGE_CHOICES
+    )
+    hostname = models.CharField(
+        verbose_name=_('hostname'),
+        max_length=255,
+        db_index=True
+    )
     port = models.IntegerField(
         verbose_name=_('port'),
         default=80,
@@ -71,7 +82,8 @@ class Site(models.Model):
     objects = SiteManager()
 
     class Meta:
-        unique_together = ('hostname', 'port')
+        app_label='sites'
+        unique_together = ('hostname', 'port', 'language')
         verbose_name = _('site')
         verbose_name_plural = _('sites')
 

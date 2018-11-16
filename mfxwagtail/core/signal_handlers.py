@@ -3,7 +3,8 @@ import logging
 from django.core.cache import cache
 from django.db.models.signals import post_delete, post_save, pre_delete
 
-from wagtail.core.models import Page, Site
+from wagtail.core.models import Page
+from core.models import Site
 
 logger = logging.getLogger('wagtail.core')
 
