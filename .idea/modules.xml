@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$USER_HOME$/Envs/wagtail/Lib/site-packages/wagtail/.idea/wagtail.iml" filepath="$USER_HOME$/Envs/wagtail/Lib/site-packages/wagtail/.idea/wagtail.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/wagtail-page.iml" filepath="$PROJECT_DIR$/.idea/wagtail-page.iml" />
-    </modules>
-  </component>
-</project>
